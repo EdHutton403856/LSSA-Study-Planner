@@ -1,14 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lean Six Sigma Australia - Study Planner</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Lean Six Sigma Australia - Study Planner</h1>
-    <p>This is the correct working static version of the app.</p>
+  <div class="dashboard">
+    <h1>📘 Lean Six Sigma Study Planner</h1>
+    <div class="filters">
+      <label><input type="checkbox" class="filter-checkbox" data-type="yellowbelt" checked> Yellow Belt</label>
+      <label><input type="checkbox" class="filter-checkbox" data-type="greenbelt" checked> Green Belt</label>
+      <label><input type="checkbox" class="filter-checkbox" data-type="blackbelt" checked> Black Belt</label>
+      <label><input type="checkbox" class="filter-checkbox" data-type="agile" checked> Agile Master</label>
+    </div>
+    <div class="cards">
+      <div class="card yellowbelt">Yellow Belt: 6 hours · 30 days · 5 sessions</div>
+      <div class="card greenbelt">Green Belt: 40 hours · 180 days · 20 sessions</div>
+      <div class="card blackbelt">Black Belt: 40 hours · 180 days · 20 sessions</div>
+      <div class="card agile">Agile Master: 40 hours · 180 days · 20 sessions</div>
+    </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
